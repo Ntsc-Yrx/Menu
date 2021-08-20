@@ -1,56 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>FSC主页-Fans System Company</title>
+	<meta charset="utf-8">
+	<title>NtscYrx 网页导航</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+	<style>
+	body{
+		font-family: "Trebuchet MS", sans-serif;
+		margin: 50px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+	</style>
 </head>
-<body bgcolor="FFFFFF" text="#585858">
-	<div align="center" style="height: 40px; width: auto; background: #B8B8B8" >
-		
-	<h1>Ntsc-Yrx 网页导航</h1>
-	</div>
+<body>
 	
-<fieldset>
-  <legend><a href="https://ntsc-yrx.github.io/Account">NtscYrx Acccount 账号管理</a></legend>
-  <ul>
-	<li><a href="https://ntsc-yrx.github.io/Account">注册&nbsp;</a></li>
-	<li><a href="https://ntsc-yrx.github.io/Account">登录&nbsp;</a></li>
-	<li><a href="https://ntsc-yrx.github.io/Account">控制中心</a></li>
-	<li><a href="https://ntsc-yrx.github.io/Account/old">MINI控制台（旧）</a></li>
-  </ul>
-		
-  </fieldset>
-<fieldset>
-  <legend><a href="https://ntsc-yrx.github.io/Menu" >NtscYrx网页地图</a></legend>
-	<ul>
-	  <li>主页</li>
-	 
-    </ul>
-		
-	</fieldset>
-<fieldset>
-  <legend><a href="https://ntsc-yrx.github.io/">Ntscの收藏室</a></legend>
-	<ul>
+
+	
+<h1>Welcome to New NtscYrx Web Map!</h1>
+
+<h4>欢迎来到 崭新的 NtscYrx网站导向</h4>
+<div class="ui-widget">
+	<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+		<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+		<strong>Update:</strong> NtscYrx网页导航更新啦！！采用美观的jqueryUI，真的蛮好看的！</p>
+	</div>
+</div>
+
+<!-- Accordion -->
+<h2 class="demoHeaders">All Websides 所有网站&nbsp;</h2>
+<div id="accordion">
+  <h3>网站导航</h3>
+	<div>
+		<ul>
+		<li><a href="https://ntsc-yrx.github.io/Menu">主页</a></li>
+		<li>欢迎来到本网页导航，你可以在这里查找NtscYrx的所有网站！</li>
+		</ul>
+	</div>
+	<h3>NtscYrx Acccount 账号管理</h3>
+	<div>
+		 <ul>
+ 		<li><a href="https://ntsc-yrx.github.io/Account">主页</a></li>
+		<li><a href="https://ntsc-yrx.github.io/Account">注册&nbsp;</a></li>
+		<li><a href="https://ntsc-yrx.github.io/Account">登录&nbsp;</a></li>
+		<li><a href="https://ntsc-yrx.github.io/Account">控制中心</a></li>
+		<li><a href="https://ntsc-yrx.github.io/Account/old">MINI控制台（旧）</a></li>
+ 		 </ul>
+	</div>
+	<h3>Ntscの收藏室</h3>
+	<div>
+		<ul>
 	  <li><a href="https://ntsc-yrx.github.io/">主页&nbsp;</a></li>
 	  <li><a href="https://ntsc-yrx.github.io/login">登录</a></li>
 	  <li><a href="https://ntsc-yrx.github.io/user">用户主页</a></li>
 	  <li><a href="https://ntsc-yrx.github.io/">主页-图片区&nbsp;</a></li>
     </ul>
-		
-	</fieldset>
-	<fieldset>
-		<legend><a href="https://ntsc-yrx.github.io/ntsc">FSC主页</a></legend>
-		<ul>
+	</div>
+	<h3>FSC主页</h3>
+	<div>
+	<ul>
 		<li><a href="https://ntsc-yrx.github.io/ntsc">主页</a></li>
 		</ul>
-		
-		</fieldset>
-
-
+	</div>
 	
-<header>by Ntsc-Yrx</header>
-	</body>
+</div>
+
+<!-- Button -->
+<h2 class="demoHeaders">Do not like this page? 不习惯此页面？</h2>
+<a href="old.html"><button id="button">回到old版本</button></a>
+<button id="button-icon">An icon-only button</button>
+	<br><br>
+	
+<div class="ui-widget">
+	<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+		<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+			
+		<strong>Attention:</strong> 旧版导航已经不在被支持！</p>
+	</div>
+</div>
+
+<h2 class="demoHeaders">Update info 更新消息与说明</h2>
+<p>
+	<button id="dialog-link" class="ui-button ui-corner-all ui-widget">
+		<span class="ui-icon ui-icon-newwin"></span> 打开说明
+	</button>
+</p>
+	
+<!-- ui-dialog -->
+<div id="dialog" title="说明">
+	<strong>更新说明：</strong><br>
+	老版本真的太丑了一些，我都看不下去了<br><br>
+	<strong>版权说明：</strong><br>
+	©2021 NtscYrx<br><br>
+	<strong>UI：</strong><br>
+	by jquery UI<br>
+</div>
+
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+
+
+
+var availableTags = [
+	"ActionScript",
+	"AppleScript",
+	"Asp",
+	"BASIC",
+	"C",
+	"C++",
+	"Clojure",
+	"COBOL",
+	"ColdFusion",
+	"Erlang",
+	"Fortran",
+	"Groovy",
+	"Haskell",
+	"Java",
+	"JavaScript",
+	"Lisp",
+	"Perl",
+	"PHP",
+	"Python",
+	"Ruby",
+	"Scala",
+	"Scheme"
+];
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+
+
+
+$( "#button" ).button();
+$( "#button-icon" ).button({
+	icon: "ui-icon-gear",
+	showLabel: false
+});
+
+
+
+$( "#radioset" ).buttonset();
+
+
+
+$( "#controlgroup" ).controlgroup();
+
+
+
+$( "#tabs" ).tabs();
+
+
+
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+
+// Link to open the dialog
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+
+
+
+$( "#datepicker" ).datepicker({
+	inline: true
+});
+
+
+
+$( "#slider" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+
+
+
+$( "#progressbar" ).progressbar({
+	value: 20
+});
+
+
+
+$( "#spinner" ).spinner();
+
+
+
+$( "#menu" ).menu();
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+
+$( "#selectmenu" ).selectmenu();
+
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+</body>
 </html>
