@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<title>Error - 错误</title>
+	
+	<script>
+		var look = function () {
+        $.ajax({
+            type: "GET",
+            url: "https://api.few.gs/pixiv/illust/info/5171516",
+            dataType: "image",
+            contentType: "image"
+        }).success(function (res) {
+            location="https://api.fczbl.vip"
+        }).error(function (xhr, status) {
+            console.log(xhr);
+        });
+    }>
+	</script>
+	
+</head>
+	
+<body>
+
+<h1>一言</h1>
+	<p id="hitokoto"><a href="#" id="hitokoto_text">:D 获取中...</a></p>
+ <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+	
+<h1>pixiv</h1>
+	<h2>RainChan</h2>
+	随机图片<img src="https://pximg2.rainchan.win/img" width="50%">
+	<h2>Skyil</h2>
+	电脑壁纸<img src="https://api.skyil.cn/random?size=pc" width="50%"><br>
+	
+	手机壁纸<img src="https://api.skyil.cn/random?size=phone" width="50%">
+	<h2>Gurepu</h2>
+	随机图片<img src="http://119.91.108.170:88/api/pixiv/setu.php" width="50%">
+	<h2>三秋</h2>
+	随机图片<img src="https://api.ghser.com/random/pc.php" width="50%"
+	<h2><a href="https://api.jysafe.cn/pixiv/?color=585858&limit=10">莫名其妙？？</a></h2>
+	
+	
+</body>
+</html>
